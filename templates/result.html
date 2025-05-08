@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Perhitungan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Hasil Perhitungan</h1>
+        <div class="result-box">
+            <p>{{ hasil }}</p>
+        </div>
+        <a href="/" class="btn">Kembali ke Halaman Utama</a>
+    </div>
+</body>
+</html>

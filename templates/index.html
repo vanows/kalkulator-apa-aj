@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web apa aja</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="background-text left">Vanows</div>
+    <div class="background-text right">Vanows</div>
+    <h1>ngitung jadi aj</h1>
+    <form action="/hitung" method="post" class="form-container">
+        <label for="operasi">Pilih Operasi:</label>
+        <select name="operasi" id="operasi">
+            <option value="faktorial">Hitung Faktorial</option>
+            <option value="fibonacci">Hitung Fibonacci</option>
+            <option value="aritmatika">Hitung Deret Aritmatika</option>
+            <option value="geometri">Hitung Deret Geometri</option>
+            <option value="probabilitas">Hitung Probabilitas</option>
+        </select>
+        <label for="angka">Masukkan Angka:</label>
+        <input type="number" name="angka" id="angka" placeholder="Contoh: 5">
+        <label for="a">Masukkan Suku Pertama (a):</label>
+        <input type="number" name="a" id="a" placeholder="Contoh: 2">
+        <label for="d">Masukkan Beda (d):</label>
+        <input type="number" name="d" id="d" placeholder="Contoh: 3">
+        <label for="r">Masukkan Rasio (r):</label>
+        <input type="number" name="r" id="r" placeholder="Contoh: 2">
+        <label for="n">Masukkan Indeks (n):</label>
+        <input type="number" name="n" id="n" placeholder="Contoh: 4">
+        <label for="k">Masukkan Jumlah Kejadian (k):</label>
+        <input type="number" name="k" id="k" placeholder="Contoh: 1">
+        <button type="submit">Hitung</button>
+    </form>
+</body>
+</html>
